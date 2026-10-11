@@ -45,7 +45,7 @@ The recommended outcome is Modify. A cheaper roaster plus a $0.25 price increase
 | [data_dictionary.md](data_dictionary.md) | Every table and column |
 | [source_to_target_mapping.md](source_to_target_mapping.md) | How the sources join into the analysis view, plus validation results |
 | [data_issues_log.md](data_issues_log.md) | Data problems found and how each was fixed |
-| [my_take.md](my_take.md) | Personal write-up on the project |
+| [reflections.md](reflections.md) | Personal write-up on the project |
 | [01_setup.sql](01_setup.sql) | One-time setup: renames, type fixes, analysis view |
 | [02_validation.sql](02_validation.sql) | Data quality checks |
 | [03_analysis.sql](03_analysis.sql) | Queries related to business questions |
