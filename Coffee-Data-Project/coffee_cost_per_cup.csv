@@ -1,0 +1,13 @@
+product_detail,coffee_name,origin_country,drink_size,cup_size_oz,grams_roasted_per_cup,grams_green_per_cup,import_value_usd_per_kg,procurement_multiplier,bean_cost_usd_per_cup,consumables_usd_per_cup,total_cost_usd_per_cup,unit_price_usd
+Brazilian Sm,Brazilian,Brazil,Sm,8,13,15.853659,4.0100,3,0.190720,0.18,0.370720,2.20
+Brazilian Rg,Brazilian,Brazil,Rg,12,19.5,23.780488,4.0100,3,0.286079,0.21,0.496079,3.00
+Brazilian Lg,Brazilian,Brazil,Lg,16,26,31.707317,4.0100,3,0.381439,0.24,0.621439,3.50
+Columbian Medium Roast Sm,Columbian Medium Roast,Colombia,Sm,8,13,15.853659,5.3600,3,0.254927,0.18,0.434927,2.00
+Columbian Medium Roast Rg,Columbian Medium Roast,Colombia,Rg,12,19.5,23.780488,5.3600,3,0.382390,0.21,0.592390,2.50
+Columbian Medium Roast Lg,Columbian Medium Roast,Colombia,Lg,16,26,31.707317,5.3600,3,0.509854,0.24,0.749854,3.00
+Ethiopia Sm,Ethiopia,Ethiopia,Sm,8,13,15.853659,7.3000,3,0.347195,0.18,0.527195,2.20
+Ethiopia Rg,Ethiopia,Ethiopia,Rg,12,19.5,23.780488,7.3000,3,0.520793,0.21,0.730793,3.00
+Ethiopia Lg,Ethiopia,Ethiopia,Lg,16,26,31.707317,7.3000,3,0.694390,0.24,0.934390,3.50
+Jamaican Coffee River Sm,Jamaican Coffee River,Jamaica,Sm,8,13,15.853659,17.7400,3,0.843732,0.18,1.023732,2.45
+Jamaican Coffee River Rg,Jamaican Coffee River,Jamaica,Rg,12,19.5,23.780488,17.7400,3,1.265598,0.21,1.475598,3.10
+Jamaican Coffee River Lg,Jamaican Coffee River,Jamaica,Lg,16,26,31.707317,17.7400,3,1.687463,0.24,1.927463,3.75
