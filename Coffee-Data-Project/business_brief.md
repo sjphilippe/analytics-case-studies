@@ -6,20 +6,16 @@
 
 Jamaican Coffee River should stay on the menu, but its margin per cup needs to come up through a cheaper roaster and a small price increase.
 
-From January to June 2023, Jamaican brought in more revenue than any other single-origin coffee ($38,781, or 26.5% of coffee revenue), and its share of coffee cups held near 24% every month in every store. Margin is the problem:
+From January to June 2023, Jamaican brought in more revenue than any other single-origin coffee (26.5% of coffee revenue), and its share of coffee cups held near 24% every month in every store. Margin is the problem:
 
 - Jamaican keeps 52% of its revenue as margin, against 75% to 83% for Brazilian, Colombian and Ethiopian.
 - Its price premium falls short of its extra bean cost at every size, by $0.26 per cup on Small up to $0.74 on Large.
-- Across all three stores combined, Maven earned $6,741 less over six months than it would have if each Jamaican cup had earned the other coffees' margin for the same size.
+- If each Jamaican cup had earned the same margin as the other coffees in its size, Maven would have made $6,741 more over six months.
 - Jamaican still earns the lowest margin even if bean costs are a third lower than estimated.
 
-**Recommendation: Modify.** Demand is healthy, but margin per cup is below the other coffees' average at every size and in every store. Move Jamaican to a cheaper roaster and raise its price by $0.25 at every size. Applied to January to June, the two changes together would have added $8,405 in margin and put every size ahead of the other coffees per cup. The roaster change carries no sales risk. The price increase still pays off as long as fewer than 11% of Jamaican cups are lost.
+**Recommendation: Modify.** Demand is healthy, but margin per cup is below the other coffees' average at every size and in every store. Move Jamaican to a cheaper roaster and raise its price by $0.25 at every size. Applied to January to June, the two changes together would have added $8,405 in margin and put every size ahead of the other coffees per cup. The price increase still pays off as long as fewer than 11% of Jamaican cups are lost.
 
 **Risks:** the price scenarios assume sales would have held, and the 2× roaster is the optimistic end of the range. Real savings depend on roaster quotes.
-
-## Problem statement
-
-Jamaican Coffee River has run as a premium pilot in all three stores since January, priced above our other single-origin coffees. Sales and revenue are tracked by product, but bean costs aren't, so we can't yet tell whether the higher price covers the more expensive beans. The decision to keep, change or drop the pilot for the remaining 6 months of the year is to be determined based on analysis.
 
 ## How margin was calculated
 
