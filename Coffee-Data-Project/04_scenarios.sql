@@ -14,8 +14,7 @@
    -------------------------
    The data covers January to June 2023, which has already happened.
    Every scenario replays those SAME six months with one thing changed
-   (a higher price, a cheaper roaster). Nothing here forecasts future
-   months.
+   (a higher price, a cheaper roaster). 
 
    actual_...   = what really happened, January to June 2023.
    new_...      = the same six months, re-run with the scenario change.
@@ -37,8 +36,8 @@
 
 /* =====================================================================
    A. CHARGE MORE
-   Jamaican's menu price goes up $0.25 or $0.50 at every size. Costs do
-   not change, so every cent of the increase becomes extra margin on
+   Jamaican's menu price goes up $0.25 or $0.50 at every size and 
+   every cent of the increase becomes extra margin on
    each cup sold.
 
    The unknown: would customers still have bought as many cups at the
@@ -110,10 +109,6 @@ ORDER BY s.price_increase,
                         earned. Lose more than this and the increase
                         made things worse.
      cup_loss_cushion_pct  the same, as a share of cups_sold
-
-   Example: a Small earning $1.43 earns $1.68 after +$0.25. About 85
-   cups at $1.68 earn the same as 100 cups at $1.43, so about 15% of
-   Small cups could be lost before the increase stops paying off.
    --------------------------------------------------------------------- */
 WITH jamaican AS (
     SELECT drink_size,
@@ -172,8 +167,7 @@ ORDER BY s.price_increase;
    new bean cost = current bean cost / 3 x new multiplier
 
    The menu price does not change, so customers see no difference and
-   sales volume is not affected. Every cent saved on beans becomes
-   margin. The other coffees are unchanged.
+   sales volume is not affected. 
    ===================================================================== */
 
 
@@ -233,7 +227,6 @@ ORDER BY j.new_multiplier DESC,
    B2  Cheaper roaster: six months, by size
    Question: if Jamaican's beans had come from a cheaper roaster from
    January to June, how much more margin would it have earned?
-   Sales are the real ones, since the menu price did not change.
 
    Columns
      cups_sold       Jamaican cups actually sold, Jan-Jun
@@ -313,11 +306,8 @@ ORDER BY b.new_multiplier DESC;
 
    If yes, the main finding does not depend on the 3x guess.
 
-   Why the coffees do not all move the same amount: the markup only
-   multiplies bean cost. A coffee whose beans take a bigger share of
-   its price gains more when the markup drops. Jamaican's beans are
-   the most expensive, so it gains the most. The question is whether
-   it gains enough to catch up.
+   Jamaican's beans are the most expensive, so it gains the most. 
+   The question is whether it gains enough to catch up.
    ===================================================================== */
 
 
@@ -402,11 +392,6 @@ ORDER BY gap_at_3x DESC;
 /* =====================================================================
    D. BOTH LEVERS TOGETHER
    Jamaican's price goes up $0.25 AND it moves to a roaster at 2x.
-   The two stack: the price increase adds to each cup's revenue, the
-   roaster deal takes away from each cup's cost.
-
-   The levels live in one place (the params CTE in each query), so
-   another combination is a one-line change.
 
    The price increase still carries the risk of losing customers; the
    roaster deal does not. D2 and D3 therefore show two cushions:
