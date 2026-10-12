@@ -22,8 +22,6 @@
    Q1  Product performance
    How did Jamaican Coffee River's units, revenue and margin compare
    with Brazilian, Colombian and Ethiopian coffee?
-   A coffee whose margin share is below its revenue share earns less
-   than its sales suggest. Already sorted highest to lowest margin.
    --------------------------------------------------------------------- */
 SELECT coffee_name,
        SUM(transaction_qty)                                                   AS units,
