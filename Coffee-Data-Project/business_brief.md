@@ -39,65 +39,33 @@ All figures cover January 1 to June 30, 2023, across Astoria, Hell's Kitchen and
 
 ### Do customers want it?
 
-Yes. Demand is steady in every store.
+Yes. Jamaican’s revenue lead comes from its higher price, not more buyers. Demand for Jamaican is steady with its share held near 24% every month, and its sales grew in step with the shop. Hell’s Kitchen is the one soft spot, where Jamaican also grew slower than the store (97.7% vs. 105.3%).
 
-![Jamaican sales grew in step with the shop](images/growth_since_january.png)
-
-- Highest revenue of the four coffees: $38,781, against $37,747 for Brazilian, $37,726 for Ethiopian and $32,309 for Colombian.
-- Share of coffee cups held near 24% every month.
-- Sales doubled from January to June, in step with each store's overall growth.
-- Hell's Kitchen is the softest market: Jamaican grew 97.7% there, against 105.3% for the store.
+![Cups sold by store](images/store_cups.png)
+![Revenue by store](images/store_revenue.png)
 
 *Sources: Q1, Q3a to Q3c, Q7a to Q7c, 03_analysis.sql*
 
 ### Does each cup earn enough?
 
-No. The price premium doesn't cover the extra bean cost at any size.
+No. The menu premium doesn’t cover the cost of the beans. Jamaican beans import at over four times the price of Brazilian, and the shortfall grows with cup size because bigger cups use more beans.
 
 ![Jamaican earns the least per cup at every size](images/margin_per_cup.png)
 
-| Size | Price premium | Extra cost per cup | Shortfall per cup |
-| --- | --: | --: | --: |
-| Small | $0.32 | $0.58 | −$0.26 |
-| Regular | $0.27 | $0.87 | −$0.60 |
-| Large | $0.42 | $1.16 | −$0.74 |
-
-- Jamaican beans import at about four times the price of Brazilian beans ($17.74 against $4.01 per kg).
-- A Jamaican Large earns less margin than a Brazilian Small.
-
 *Sources: Q1, Q4, Q5, 03_analysis.sql*
-
-### What does the gap cost?
-
-$6,741 in margin across all three stores over six months, compared with what the other coffees earn per cup on the same sizes.
-
-- Large cups account for almost half of the gap.
-- Jamaican buyers choose Large slightly more often: 35% of their cups, against 33% for the other coffees.
-
-*Sources: Q6, Q8, 03_analysis.sql*
 
 ### Is the finding reliable?
 
-Yes. With every coffee's beans a third cheaper (a 2× markup instead of 3×), Jamaican still earns the lowest margin.
-
-- Jamaican: 66% of revenue, against 81% to 86% for the others.
-- The gap narrows from 23 to 31 points to 15 to 20 points, but doesn't close.
+Yes. With every coffee's beans a third cheaper (a 2× markup instead of 3×), Jamaican still earns the lowest margin. Jamaican: 66% of revenue, against 81% to 86% for the others. The gap narrows from 23 to 31 points to 15 to 20 points, but doesn't close.
 
 *Sources: C1, C2, 04_scenarios.sql*
 
 ## Options
 
-Each option replays January to June 2023 with the change applied. Figures are not a forecast.
+Modify price: A price increase alone leaves Jamaican Regular and Large behind the other coffees. Paired with the 2× roaster, either increase puts every size ahead of the other single-origin coffees.
+Keep price as is: Jamaican keeps earning $6,741 less than the other coffees would on the same cups, and the gap grows as sales grow.
+Discontinue pilot: Maven gives up $38,781 in revenue and $20,268 in margin. How many buyers would switch to another coffee rather than leave is unknown.
 
-![Only both changes together close the gap at every size](images/scenarios_vs_other_coffees.png)
-
-| Option | Six-month margin effect | Main risk |
-| --- | --- | --- |
-| Keep as is | Jamaican keeps earning $6,741 less than the other coffees would on the same cups | The gap continues, and grows with sales |
-| Raise price $0.25 | +$3,108 if sales hold | Breaks even if 13% of Jamaican cups are lost; Regular and Large stay behind |
-| Raise price $0.50 | +$6,216 if sales hold | Breaks even at a 23.5% loss; Large stays $0.24 behind per cup |
-| Cheaper roaster | +$5,297 at 2×; +$2,649 at 2.5× | No sales risk, but depends on finding the deal; Regular and Large stay behind |
-| **Cheaper roaster and $0.25 increase** | **+$8,405 if sales hold** | Price part pays off only if fewer than 11% of cups are lost |
-| Discontinue | Gives up $38,781 in revenue and $20,268 in margin | Unknown share of buyers would switch to another coffee rather than leave |
+![Jamaican margin by scenario](images/scenarios_vs_other_coffees.png)
 
 *Sources: A1 to A3, B1 to B3, D1 to D3, 04_scenarios.sql; Q1, Q6, 03_analysis.sql*
