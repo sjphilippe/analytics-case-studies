@@ -37,12 +37,14 @@ Example, Jamaican Regular: 19.5 g ÷ 0.82 = 23.78 g of green beans × $17.74 per
 
 All figures cover January 1 to June 30, 2023, across Astoria, Hell's Kitchen and Lower Manhattan.
 
-### Do customers want it?
+### Do customers want Jamaican Coffee River?
 
 Yes. Jamaican’s revenue lead comes from its higher price, not more buyers. Demand for Jamaican is steady with its share held near 24% every month, and its sales grew in step with the shop. Hell’s Kitchen is the one soft spot, where Jamaican also grew slower than the store (97.7% vs. 105.3%).
 
-![Cups sold by store](images/Jamaican_cups_per_store.png)
-![Revenue by store](images/Jamaican_rev_per_store.png)
+<p>
+  <img src="images/Jamaican_cups_per_store.png" alt="Cups sold by store" width="49%">
+  <img src="images/Jamaican_rev_per_store.png" alt="Revenue by store" width="49%">
+</p>
 
 *Sources: Q1, Q3a to Q3c, Q7a to Q7c, 03_analysis.sql*
 
@@ -54,11 +56,6 @@ No. The menu premium doesn’t cover the cost of the beans. Jamaican beans impor
 
 *Sources: Q1, Q4, Q5, 03_analysis.sql*
 
-### Is the finding reliable?
-
-Yes. With every coffee's beans a third cheaper (a 2× markup instead of 3×), Jamaican still earns the lowest margin. Jamaican: 66% of revenue, against 81% to 86% for the others. The gap narrows from 23 to 31 points to 15 to 20 points, but doesn't close.
-
-*Sources: C1, C2, 04_scenarios.sql*
 
 ## Options
 
@@ -66,6 +63,6 @@ Modify price: A price increase alone leaves Jamaican Regular and Large behind th
 Keep price as is: Jamaican keeps earning $6,741 less than the other coffees would on the same cups, and the gap grows as sales grow.
 Discontinue pilot: Maven gives up $38,781 in revenue and $20,268 in margin. How many buyers would switch to another coffee rather than leave is unknown.
 
-![Jamaican margin by scenario](images/option_scenarios.png)
+![Jamaican margin by scenario](images/Jamaican_modify_options.png)
 
 *Sources: A1 to A3, B1 to B3, D1 to D3, 04_scenarios.sql; Q1, Q6, 03_analysis.sql*
