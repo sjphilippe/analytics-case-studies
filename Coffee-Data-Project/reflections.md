@@ -11,8 +11,7 @@ I chose this project because I spent five plus years working in point-of-sale an
 
 Besides some mild cleanup upon loading into SQL server, the sales data is clean and complete for what it records. The biggest short fall of the data set was the lack of customer behavior.  After running the initial analysis I was wishing for more customer granularity to gain insight of behavior across the 3 stores. Additionally I would have loved if I sales data prior to the Jamaican pilot so that I could see its true popularity and how Jamaican coffee impacted sales of the other 3 coffees. The dataset lacking a 'cost of production' meant that it had to be estimated, and of course my assumptions could be wrong.  
 
-Other things I noticed in the dataset were that each coffee sold within about 5% of the others' cup totals, and Jamaican's share barely moved from month to month. It seems unlikely in a real setting that sales over this period of time would skew toward such a clean average. That pattern suggests the data was generated rather than recorded.
-
+Other things I noticed in the dataset were that each coffee sold within about 5% of the others' cup totals, and Jamaican's share barely moved from month to month. Testing sales per day across the three stores showed that sales rose and fell on specific dates each month. Even worse, each location had a consistent drop in sales during lunch hour and on weekends. It is highly unlikely in a real setting that sales over this period of time would skew toward such a clean averages. That pattern suggests the data was generated rather than recorded.
 
 ## How I worked with Claude
 
