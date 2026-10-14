@@ -1,24 +1,22 @@
 # Maven Premium Coffee Pilot
 
-This project aims to decide whether a coffee shop (Maven) should keep a new pilot coffee, Jamaican Coffee River, on the menu. It uses a combination of sales transaction data for six months across three stores, real bean import prices with a hypothetical roaster markup and production costs. I, as the company's data analyst, present a decision framework of whether to keep, modify or discontinue the Jamaican pilot and the price and supplier scenarios agreed at the start of the project. 
+This data insights project aims to decide whether a coffee shop (Maven) should keep a new pilot coffee, Jamaican Coffee River, on the menu. It uses a combination of sales transaction data for six months across three stores, real bean import prices and a hypothetical roaster markup and production costs. I present a decision framework of whether to keep, modify or discontinue the Jamaican pilot.
 
 
 ### Summary of Findings
 
-The recommendation is to modify the current price of Jamaican Coffee River: switch to a cheaper roaster and raise the price $0.25. Together, those changes would have added $8,405 over the six months. More details are in the [business_brief](business_brief.md).
+My recommendation is to modify the current price of Jamaican by switching to a cheaper roaster and raising the price by $0.25. These changes would have added $8,405 over the six months. More details are in the [business_brief](business_brief.md).
 
-Jamaican Coffee was the top seller by revenue in every store, making up 26.5% of coffee sales. The biggest issue with this coffee is its price. Jamaican’s beans cost over four times as much as Brazilian’s, but its price is only slightly higher, so it keeps 52% of each sale as margin vs. 75% to 83% for the other coffees. This difference in margin cost the company $6,741 over six months. Even with coffee beans 33% cheaper, Jamaican still came out last.
+Jamaican was the top seller by revenue in every store, making up 26.5% of coffee sales. The biggest issue with this coffee is its price. Jamaican’s beans cost over four times as much as Brazilian’s, but its price is only slightly higher, so it keeps 52% of each sale as margin vs. 75% to 83% for the other coffees. This difference in margin cost the company $6,741 over six months.
 
-#### Objectives & Scope
-1. Estimate cost and margin per cup for each coffee and size.
+**For this project I had a set of objectives I wanted to acomplish. They are:**
+1. Estimate the cost and margin per cup for each coffee and size.
 2. Compare Jamaican with Brazilian, Colombian and Ethiopian coffee on units, revenue share and margin.
 3. Check whether results differ by store.
 4. Track Jamaican's monthly share of coffee sales, adjusted for overall store growth.
-5. Test four scenarios: Jamaican price increases of $0.25 and $0.50, a cheaper roaster at 2.5× and 2×, both levers together, and whether the finding holds at a 2× markup.
+5. Test price scenarios: Jamaican price increases of $0.25 and $0.50, and switching to cheaper roaster at 2.5x or 2x markup 
 
-**In Scope:** the four single-origin brewed coffees, in every size. Costs cover beans plus cup, lid and sleeve.
-
-**Out of Scope:** espresso, blends, tea, food and merchandise. Cream, sugar, waste, card fees, labor and rent.
+**I scoped the project to include** the four single-origin brewed coffees, in every size. Costs cover beans plus cup, lid and sleeve. While things like espresso, blends, tea, cream, sugar, waste, card fees, labor and rent reamined out of scope.
 
 #### Data
 1. **[Maven transactions](https://mavenanalytics.io/data-playground/coffee-shop-sales):** the public Maven Roasters dataset, 149,116 transaction lines, January 1 to June 30, 2023, from three New York stores (Astoria, Hell's Kitchen, Lower Manhattan).
@@ -27,7 +25,7 @@ Jamaican Coffee was the top seller by revenue in every store, making up 26.5% of
 
 ### Dataset limitations
 - The sales data has no costs, so bean cost is estimated from 2023 import prices plus an assumed roaster markup. The import prices also cover all of 2023, while sales cover only January to June.
-- Prices never changed and there are no customer IDs, so the data can't show how customers would react to a price increase or whether Jamaican buyers come back. The price scenarios assume sales would have held.
+- Prices never changed and there are no customer IDs, so the data can't show how customers would react to a price increase or whether Jamaican Coffee buyers come back. The price scenarios assume sales would have held.
 - Six months isn't long enough to see seasonal patterns. Jamaican also sold from the first day, so there's no before-and-after to show whether it pulled sales from the other coffees.
 
 ### Files
