@@ -1,22 +1,27 @@
 # Maven Premium Coffee Pilot
 
-This data insights project aims to decide whether a coffee shop (Maven) should keep a new pilot coffee, Jamaican Coffee River, on the menu. It uses a combination of sales transaction data for six months across three stores, real bean import prices and a hypothetical roaster markup and production costs. I present a decision framework of whether to keep, modify or discontinue the Jamaican pilot.
+This portfolio case study explores whether Maven should keep, modify, or discontinue Jamaican Coffee River as a hypothetical menu pilot. I combined six months of sales data across three stores with coffee import prices and estimated bean and packaging costs to evaluate demand, margins, and pricing options.
+
+**Tools:** SQL Server, SQL, and Claude for coding and documentation assistance.
+
+**My role:** I defined the business question, selected the sources and cost assumptions, ran every query in SQL Server, checked the outputs, and made the final recommendation. Claude helped draft SQL, documentation, and supporting calculations. See [how I worked with Claude.](reflections.md) 
 
 
 ### Summary of Findings
 
-My recommendation is to modify the current price of Jamaican by switching to a cheaper roaster and raising the price by $0.25. These changes would have added $8,405 over the six months. More details are in the [business_brief](business_brief.md).
 
-Jamaican was the top seller by revenue in every store, making up 26.5% of coffee sales. The biggest issue with this coffee is its price. Jamaican’s beans cost over four times as much as Brazilian’s, but its price is only slightly higher, so it keeps 52% of each sale as margin vs. 75% to 83% for the other coffees. This difference in margin cost the company $6,741 over six months.
+My recommendation is to keep Jamaican Coffee River on the menu while exploring a cheaper roaster and a $0.25 price increase. Under the modeled cost assumptions, reducing the roaster multiplier from 3× to 2× and holding sales volume constant would have added an estimated $8,405 in margin over six months. This is a scenario result, not realized savings. See the [business brief](business_brief.md) for the findings and assumptions.
 
-**For this project I had a set of objectives I wanted to acomplish. They are:**
+Jamaican was the top seller by revenue in every store, making up 26.5% of coffee sales.Jamaican’s estimated bean cost was over four times Brazilian’s, but its selling price was only slightly higher. Under the cost model, Jamaican retained about 52% of revenue after bean and packaging costs, compared with 75% to 83% for the other coffees. Applying the other coffees’ average margin per cup at each size to Jamaican’s sales volume produced a $6,741 benchmark gap over six months
+
+**For this project I had a set of objectives I wanted to accomplish. They are:**
 1. Estimate the cost and margin per cup for each coffee and size.
 2. Compare Jamaican with Brazilian, Colombian and Ethiopian coffee on units, revenue share and margin.
 3. Check whether results differ by store.
 4. Track Jamaican's monthly share of coffee sales, adjusted for overall store growth.
-5. Test price scenarios: Jamaican price increases of $0.25 and $0.50, and switching to cheaper roaster at 2.5x or 2x markup 
+5. Test price scenarios: Jamaican price increases of $0.25 and $0.50, and switching to cheaper roaster at 2.5x or 2x cost multiplier.
 
-**I scoped the project to include** the four single-origin brewed coffees, in every size. Costs cover beans plus cup, lid and sleeve. While things like espresso, blends, tea, cream, sugar, waste, card fees, labor and rent reamined out of scope.
+**I scoped the project to include** the four single-origin brewed coffees, in every size. Modeled costs include beans, cups, lids, and sleeves. Espresso, blends, and tea are outside the product scope. Cream, sugar, waste, card fees, labor, and rent are excluded from the cost model, so the reported margin is not net profit.
 
 #### Data
 1. **[Maven transactions](https://mavenanalytics.io/data-playground/coffee-shop-sales):** the public Maven Roasters dataset, 149,116 transaction lines, January 1 to June 30, 2023, from three New York stores (Astoria, Hell's Kitchen, Lower Manhattan).
